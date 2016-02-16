@@ -5943,7 +5943,7 @@ th.hide-for-touch {
   .m-sm-frame-hero {
     position: relative;
     left: 50%;
-    width: 800px;
+    max-width: 800px;
     margin-left: -400px; } }
 
 .info {
