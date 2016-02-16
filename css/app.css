@@ -5887,7 +5887,7 @@ th.hide-for-touch {
 .logo-nav {
   border-radius: 50%;
   width: 50px;
-  border: solid 4px #3859f9;
+  border: solid 2px #3859f9;
   margin-left: 20px;
   margin-top: 7px; }
 
@@ -5916,6 +5916,35 @@ th.hide-for-touch {
   background-repeat: repeat-x;
   background-size: 8px 4px;
   z-index: 0; }
+
+.rock-border {
+  color: #203a68;
+  background-color: transparent;
+  background-position: center top, left top;
+  background-repeat: no-repeat, repeat;
+  text-align: center;
+  background-size: cover, auto;
+  padding: 70px 0 0px 0;
+  background-image: url('/images/rock2.png'); }
+
+@media screen and (min-width: 768px) {
+  .rock-border {
+    background-size: 1600px 800px, auto;
+    padding: 130px 0 0px 0; } }
+
+@media screen and (min-width: 768px) {
+  .m-sm-frame-hero {
+    position: static;
+    left: auto;
+    width: auto;
+    margin-left: 0; } }
+
+@media screen and (max-width: 767px) {
+  .m-sm-frame-hero {
+    position: relative;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px; } }
 
 .info {
   line-height: 1.4; }
@@ -5960,89 +5989,116 @@ a {
 h2.onpic {
   color: white;
   text-shadow: 1px 1px 0px black;
-  font-size: 2.5rem;
   letter-spacing: 1.5px;
   font-family: 'Raleway', sans-serif; }
+  @media (min-width: 700px) {
+    h2.onpic {
+      font-size: 2.5rem; } }
+  @media (max-width: 699px) {
+    h2.onpic {
+      margin-top: 10px;
+      font-size: 1.5rem; } }
 
 h1 {
   color: white;
   text-shadow: 1px 2px 0px black;
-  margin-top: 200px;
-  font-size: 4rem;
   letter-spacing: 1.5px;
   font-family: 'Pacifico', cursive; }
+  @media (min-width: 700px) {
+    h1 {
+      margin-top: 200px;
+      font-size: 4rem; } }
+  @media (max-width: 699px) {
+    h1 {
+      margin-top: 10px;
+      font-size: 2.5rem; } }
 
-.plain {
-  padding: 50px; }
-  .plain h2 {
-    color: #565659;
-    padding: 0 0 15px 0;
-    font-family: 'Comfortaa', cursive; }
-    @media (max-width: 767px) {
-      .plain h2 {
-        text-align: center; } }
+@media (min-width: 700px) {
+  .plain {
+    padding: 50px; } }
+@media (max-width: 699px) {
+  .plain {
+    padding: 20px; } }
+.plain h2 {
+  color: #565659;
+  padding: 0 0 15px 0;
+  font-family: 'Comfortaa', cursive; }
+  @media (max-width: 767px) {
+    .plain h2 {
+      text-align: center; } }
 
 .intro {
   box-shadow: inset 0px 0px 31px 8px rgba(0, 0, 0, 0.75);
-  background-position: center center;
-  background-size: cover;
-  padding: 75px 0 0 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url("/images/meandjaymo5.png"); }
-
-.bridal {
-  padding: 50px; }
-  .bridal h2 {
-    color: #565659;
-    font-family: 'Comfortaa', cursive;
-    margin-bottom: 30px; }
-  .bridal h3 {
-    color: #44423f;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Comfortaa', cursive; }
-  .bridal .people {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-bottom: 20px; }
-    .bridal .people .individual-img {
-      border-radius: 50%;
+  background-repeat: no-repeat; }
+  @media (min-width: 713px) {
+    .intro {
+      background-image: url("/images/meandjaymo5.jpg");
       background-position: center center;
-      background-repeat: no-repeat;
-      margin: 5px; }
-      @media (min-width: 970px) {
-        .bridal .people .individual-img {
-          width: 75px;
-          height: 75px;
-          background-size: 75px;
-          border: solid 4px #cec7bd; } }
-      @media (min-width: 601px) and (max-width: 969px) {
-        .bridal .people .individual-img {
-          width: 50px;
-          height: 50px;
-          background-size: 50px;
-          border: solid 4px #cec7bd; } }
-      @media (max-width: 600px) {
-        .bridal .people .individual-img {
-          width: 35px;
-          height: 35px;
-          background-size: 35px;
-          border: solid 2px #cec7bd; } }
+      background-size: cover;
+      padding: 100px 0 0 0; } }
+  @media (max-width: 712px) {
+    .intro {
+      background-image: url("/images/meandjaymo5-2.jpg");
+      background-size: cover;
+      background-position: center center;
+      padding: 100px 0 0 0; } }
+
+@media (min-width: 700px) {
+  .bridal {
+    padding: 10px 50px 50px 50px; } }
+@media (max-width: 699px) {
+  .bridal {
+    padding: 20px; } }
+.bridal h2 {
+  color: #565659;
+  font-family: 'Comfortaa', cursive;
+  margin-bottom: 30px; }
+.bridal h3 {
+  color: #44423f;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Comfortaa', cursive; }
+.bridal .people {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px; }
+  .bridal .people .individual-img {
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px; }
+    @media (min-width: 970px) {
+      .bridal .people .individual-img {
+        width: 75px;
+        height: 75px;
+        background-size: 75px;
+        border: solid 4px #cec7bd; } }
+    @media (min-width: 601px) and (max-width: 969px) {
+      .bridal .people .individual-img {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        border: solid 4px #cec7bd; } }
+    @media (max-width: 600px) {
+      .bridal .people .individual-img {
+        width: 35px;
+        height: 35px;
+        background-size: 35px;
+        border: solid 2px #cec7bd; } }
 
 @media (min-width: 700px) {
   .linktorest:active div.individual-img {
@@ -6098,8 +6154,12 @@ h1 {
     text-align: left;
     margin-top: 10px; }
 
-#og_contain {
-  padding: 150px 30px 70px 30px; }
+@media (min-width: 730px) {
+  #og_contain {
+    padding: 150px 30px 70px 30px; } }
+@media (max-width: 729px) {
+  #og_contain {
+    padding: 20px 10px 20px 10px; } }
 
 .og-title {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -6107,11 +6167,19 @@ h1 {
   color: #44423f;
   font-size: 3rem; }
 
-.dc-bg {
-  background-image: url("/images/dcstarrynight.jpg"); }
+@media (min-width: 730px) {
+  .dc-bg {
+    background-image: url("/images/dcstarrynight.jpg"); } }
+@media (max-width: 729px) {
+  .dc-bg {
+    background-image: url("/images/dcstarrynight2.jpg"); } }
 
-.event-bg {
-  background-image: url("/images/fairmont.jpg"); }
+@media (min-width: 730px) {
+  .event-bg {
+    background-image: url("/images/fairmont.jpg"); } }
+@media (max-width: 729px) {
+  .event-bg {
+    background-image: url("/images/fairmont2.jpg"); } }
 
 .registry {
   background-image: url("/images/gift.jpeg");
@@ -6127,12 +6195,22 @@ h1 {
   padding: 50px; }
 
 .color-bg {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 50px; }
+  background-color: rgba(0, 0, 0, 0.6); }
+  @media (min-width: 700px) {
+    .color-bg {
+      padding: 50px; } }
+  @media (max-width: 699px) {
+    .color-bg {
+      padding: 20px; } }
 
 .dc-color-bg {
-  padding: 50px;
   background-color: rgba(0, 0, 0, 0.5); }
+  @media (min-width: 700px) {
+    .dc-color-bg {
+      padding: 50px; } }
+  @media (max-width: 699px) {
+    .dc-color-bg {
+      padding: 20px; } }
 
 .dc, .event {
   box-shadow: inset 0px 0px 31px 8px rgba(0, 0, 0, 0.75);
@@ -6316,17 +6394,19 @@ h1 {
   background-color: white;
   -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
-  margin: 25px; }
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44); }
   @media (min-width: 1000px) {
     .to-do-boxes {
-      width: 25%; } }
+      width: 25%;
+      margin: 25px; } }
   @media (min-width: 930px) and (max-width: 999px) {
     .to-do-boxes {
-      width: 30%; } }
+      width: 30%;
+      margin: 25px; } }
   @media (max-width: 929px) {
     .to-do-boxes {
-      width: 100%; } }
+      width: 100%;
+      margin: 10px; } }
   .to-do-boxes .myicon {
     background-color: #313133;
     border-radius: 50%;

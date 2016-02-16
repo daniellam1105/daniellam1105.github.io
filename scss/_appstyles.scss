@@ -31,7 +31,7 @@ $awkward: 550px;
 .logo-nav {
 border-radius: 50%;
 width: 50px;
-border: solid 4px $primary-color;
+border: solid 2px $primary-color;
 margin-left: 20px;
 margin-top:7px;
 }
@@ -60,6 +60,38 @@ background-image: url('/images/frilly.png');
 background-repeat: repeat-x;
 background-size: 8px 4px;
 z-index: 0;
+}
+.rock-border {
+color: #203a68;
+background-color: transparent;
+background-position: center top,left top;
+background-repeat: no-repeat,repeat;
+text-align: center;
+background-size: cover,auto;
+padding: 70px 0 0px 0;
+background-image: url('/images/rock2.png');
+}
+@media screen and (min-width:768px){
+  .rock-border {
+  background-size: 1600px 800px,auto;
+  padding: 130px 0 0px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+.m-sm-frame-hero {
+    position: static;
+    left: auto;
+    width: auto;
+    margin-left: 0;
+}
+}
+@media screen and (max-width:767px){
+.m-sm-frame-hero {
+    position: relative;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+}
 }
 .info {
   line-height: 1.4;
@@ -110,7 +142,6 @@ h2.onpic {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
   // text-align: center;
   // margin-top: 200px;
-  font-size: 2.5rem;
   letter-spacing: 1.5px;
   // font-family: 'Arvo', serif;
   // font-family: 'Roboto', sans-serif;
@@ -118,13 +149,18 @@ h2.onpic {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
+  @media (min-width: 700px){
+    font-size: 2.5rem;
+  }
+  @media (max-width: 699px){
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
 }
 h1 {
   color: white;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 1);
   // text-align: center;
-  margin-top: 200px;
-  font-size: 4rem;
   letter-spacing: 1.5px;
   font-family: 'Pacifico', cursive;
   // font-family: 'Arvo', serif;
@@ -133,10 +169,23 @@ h1 {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
+  @media (min-width: 700px){
+    margin-top: 200px;
+    font-size: 4rem;
+  }
+  @media (max-width: 699px){
+    margin-top: 10px;
+    font-size: 2.5rem;
+  }
 }
 
 .plain {
+  @media (min-width: 700px){
   padding: 50px;
+}
+@media (max-width: 699px){
+  padding: 20px;
+}
   h2 {
     color: #565659;
     padding: 0 0 15px 0;
@@ -157,17 +206,30 @@ h1 {
 
   .intro  {
   box-shadow: inset 0px 0px 31px 8px rgba(0,0,0,0.75);
-  background-position: $background-position;
-  background-size: $background-size;
-      padding: 75px 0 0 0;
   background-repeat: no-repeat;
-     background-attachment: fixed;
+    //  background-attachment: fixed;
     //  background-image: url("/images/mjpic/IMG_0523.jpg");
-    background-image: url("/images/meandjaymo5.png");
+    @media (min-width: 713px) {
+    background-image: url("/images/meandjaymo5.jpg");
+    background-position: center center;
+    background-size: $background-size;
+    padding: 100px 0 0 0;
+  }
+  @media (max-width: 712px) {
+  background-image: url("/images/meandjaymo5-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0 0 0;
+}
   }
 
   .bridal {
-    padding: 50px;
+    @media (min-width: 700px){
+    padding: 10px 50px 50px 50px;
+  }
+  @media (max-width: 699px){
+    padding: 20px;
+  }
     // background-color: $smooth;
     // box-shadow: inset 0px 0px 31px 8px rgba(0,0,0,0.75);
     // background-position: $background-position;
@@ -349,7 +411,12 @@ h1 {
     }
   }
   #og_contain {
+    @media (min-width: 730px){
     padding: 150px 30px 70px 30px;
+  }
+  @media (max-width: 729px){
+  padding: 20px 10px 20px 10px;
+}
   }
   .og-title {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -365,10 +432,20 @@ h1 {
   //   border-bottom: solid 3px $myblue;
   // }
   .dc-bg  {
+    @media (min-width: 730px){
     background-image: url("/images/dcstarrynight.jpg");
+    }
+    @media (max-width: 729px){
+      background-image: url("/images/dcstarrynight2.jpg");
+    }
   }
   .event-bg  {
+    @media (min-width: 730px){
     background-image: url("/images/fairmont.jpg");
+  }
+  @media (max-width: 729px){
+    background-image: url("/images/fairmont2.jpg");
+  }
   }
   .registry {
     background-image: url("/images/gift.jpeg");
@@ -395,11 +472,21 @@ h1 {
     // background-color: rgba(56,89,249,.65);
     // box-shadow: inset 0px 0px 31px 8px rgba(0,0,0,0.5);
     background-color: rgba(0,0,0, .6);
+    @media (min-width: 700px){
     padding: 50px;
   }
+  @media (max-width: 699px){
+    padding: 20px;
+  }
+}
   .dc-color-bg {
-    padding: 50px;
     background-color: rgba(0,0,0, .5);
+    @media (min-width: 700px){
+    padding: 50px;
+  }
+  @media (max-width: 699px){
+    padding: 20px;
+  }
   }
 
   .dc, .event {
@@ -640,15 +727,17 @@ h1 {
   -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.44);
 -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.44);
 box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.44);
-margin: 25px;
 @media (min-width: 1000px) {
 width: 25%;
+margin: 25px;
 }
 @media (min-width: 930px) and (max-width: 999px) {
 width: 30%;
+margin: 25px;
 }
 @media (max-width: 929px) {
 width: 100%;
+margin: 10px;
 }
   .myicon {
     background-color: #313133;
