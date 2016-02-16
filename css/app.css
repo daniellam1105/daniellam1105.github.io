@@ -5939,18 +5939,12 @@ th.hide-for-touch {
     width: auto;
     margin-left: 0; } }
 
-@media screen and (max-width: 767px) and (min-width: 500px) {
+@media screen and (max-width: 767px) {
   .m-sm-frame-hero {
     position: relative;
-    left: 50%;
+    left: 0;
     max-width: 800px;
-    margin-left: -400px; } }
-
-@media screen and (max-width: 499px) {
-  .m-sm-frame-hero {
-    position: relative;
-    left: 50%;
-    max-width: 300px; } }
+    margin-left: 0; } }
 
 .info {
   line-height: 1.4; }
