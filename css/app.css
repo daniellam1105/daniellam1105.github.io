@@ -6100,16 +6100,19 @@ h1 {
         background-size: 35px;
         border: solid 2px #cec7bd; } }
 
+a.linktorest {
+  text-decoration: none; }
+
 @media (min-width: 700px) {
-  .linktorest:active div.individual-img {
+  a.linktorest:active div.individual-img {
     border: solid 5px #3859f9; }
-  .linktorest:focus div.individual-img {
+  a.linktorest:focus div.individual-img {
     border: solid 5px #3859f9; } }
 
 @media (max-width: 699px) {
-  .linktorest:focus div.individual-img {
+  a.linktorest:focus div.individual-img {
     border: solid 2px #3859f9; }
-  .linktorest:active div.individual-img {
+  a.linktorest:active div.individual-img {
     border: solid 2px #3859f9; } }
 
 .role {

@@ -315,19 +315,22 @@ h1 {
       }
     }
   }
+  a.linktorest {
+    text-decoration: none;
+  }
   @media (min-width: 700px) {
-  .linktorest:active div.individual-img{
+  a.linktorest:active div.individual-img{
     border: solid 5px $myblue;
   }
-  .linktorest:focus div.individual-img{
+  a.linktorest:focus div.individual-img{
     border: solid 5px $myblue;
   }
 }
 @media (max-width: 699px) {
-  .linktorest:focus div.individual-img{
+  a.linktorest:focus div.individual-img{
     border: solid 2px $myblue;
   }
-  .linktorest:active div.individual-img{
+  a.linktorest:active div.individual-img{
     border: solid 2px $myblue;
   }
 }
