@@ -85,12 +85,20 @@ background-image: url('/images/rock2.png');
     margin-left: 0;
 }
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px) and (min-width: 500px){
 .m-sm-frame-hero {
     position: relative;
     left: 50%;
     max-width: 800px;
     margin-left: -400px;
+}
+}
+@media screen and (max-width:499px) {
+.m-sm-frame-hero {
+    position: relative;
+    left: 50%;
+    max-width: 300px;
+    // margin-left: -400px;
 }
 }
 .info {
