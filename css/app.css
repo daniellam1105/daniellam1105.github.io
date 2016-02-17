@@ -5881,7 +5881,7 @@ th.hide-for-touch {
 /* all app scss styles here */
 .navlink {
   letter-spacing: 1px;
-  font-weight: 700;
+  font-size: 1.1rem !important;
   font-family: 'Comfortaa', cursive !important; }
 
 .logo-nav {
@@ -6085,19 +6085,19 @@ h1 {
       .bridal .people .individual-img {
         width: 75px;
         height: 75px;
-        background-size: 75px;
+        background-size: 80px;
         border: solid 4px #cec7bd; } }
     @media (min-width: 601px) and (max-width: 969px) {
+      .bridal .people .individual-img {
+        width: 65px;
+        height: 65px;
+        background-size: 65px;
+        border: solid 4px #cec7bd; } }
+    @media (max-width: 600px) {
       .bridal .people .individual-img {
         width: 50px;
         height: 50px;
         background-size: 50px;
-        border: solid 4px #cec7bd; } }
-    @media (max-width: 600px) {
-      .bridal .people .individual-img {
-        width: 35px;
-        height: 35px;
-        background-size: 35px;
         border: solid 2px #cec7bd; } }
 
 a.linktorest {
@@ -6129,7 +6129,7 @@ a.linktorest {
 
 .info-card {
   padding: 25px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 5px;
   min-height: 450px;
   border: solid 3px #44423f;
   border-radius: 5px;
@@ -6251,7 +6251,7 @@ a.linktorest {
       color: rgba(255, 255, 255, 0.75);
       text-align: center;
       font-family: 'Raleway', sans-serif;
-      padding: 55px 50px 55px 50px; }
+      padding: 35px 50px 30px 50px; }
     .month-date p.day {
       padding: 60px 50px 0px 50px;
       font-size: 1.5rem;
@@ -6273,7 +6273,7 @@ a.linktorest {
     padding: 0 50px 50px 0;
     background-color: white; }
     .cal-info p.year {
-      padding-top: 100px;
+      padding-top: 50px;
       margin-left: 50px;
       padding-bottom: 15px;
       border-bottom: solid 1px #ccc;
@@ -6393,11 +6393,7 @@ a.linktorest {
   margin-bottom: 50px; }
 
 .to-do-boxes {
-  padding: 30px 25px 20px 25px;
-  background-color: white;
-  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
-  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44); }
+  padding: 30px 25px 20px 25px; }
   @media (min-width: 1000px) {
     .to-do-boxes {
       width: 25%;
@@ -6439,6 +6435,63 @@ a.linktorest {
     margin-top: -15px; }
   .to-do-boxes a.rest-web {
     font-size: 1rem; }
+
+.hotel-boxes .hotel-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #313133;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 300;
+  padding-bottom: 15px; }
+.hotel-boxes .hotel-info-1 {
+  padding: 15px 20px 10px 20px; }
+@media (min-width: 1000px) {
+  .hotel-boxes {
+    width: 35%;
+    margin: 25px; } }
+@media (min-width: 930px) and (max-width: 999px) {
+  .hotel-boxes {
+    width: 30%;
+    margin: 25px; } }
+@media (max-width: 929px) {
+  .hotel-boxes {
+    width: 100%;
+    margin: 10px; } }
+.hotel-boxes .hotel {
+  padding: 100px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #313133; }
+  .hotel-boxes .hotel i {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center; }
+.hotel-boxes h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #313133;
+  letter-spacing: 1.5px; }
+.hotel-boxes p.hotel-title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: #313133; }
+.hotel-boxes p.hotel-info {
+  color: #3d3e40;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  margin-top: -15px; }
+.hotel-boxes a.rest-web2 {
+  font-size: 1rem; }
+
+.to-do-boxes, .hotel-boxes {
+  background-color: white;
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.44); }
 
 @media (min-width: 767px) {
   a.registry-store {
