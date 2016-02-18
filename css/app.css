@@ -6153,7 +6153,7 @@ a.linktorest {
   .info-card p.girlinfo {
     font-family: 'Raleway', sans-serif;
     color: #44423f;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
     margin-top: 10px; }
 
@@ -6172,17 +6172,27 @@ a.linktorest {
 
 @media (min-width: 730px) {
   .dc-bg {
-    background-image: url("/images/dcstarrynight.jpg"); } }
+    background-image: url("/images/dcstarrynight.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; } }
 @media (max-width: 729px) {
   .dc-bg {
-    background-image: url("/images/dcstarrynight2.jpg"); } }
+    background-image: url("/images/dcstarrynight2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 @media (min-width: 730px) {
   .event-bg {
-    background-image: url("/images/fairmont.jpg"); } }
+    background-image: url("/images/fairmont.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; } }
 @media (max-width: 729px) {
   .event-bg {
-    background-image: url("/images/fairmont2.jpg"); } }
+    background-image: url("/images/fairmont2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
 
 .registry {
   background-image: url("/images/gift.jpeg");
@@ -6217,10 +6227,7 @@ a.linktorest {
 
 .dc, .event {
   box-shadow: inset 0px 0px 31px 8px rgba(0, 0, 0, 0.75);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-position: center center; }
   .dc h2, .event h2 {
     color: #fff;
     font-family: 'Comfortaa', cursive;
@@ -6431,7 +6438,7 @@ a.linktorest {
     color: #3d3e40;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     margin-top: -15px; }
   .to-do-boxes a.rest-web {
     font-size: 1rem; }

@@ -408,7 +408,7 @@ h1 {
     p.girlinfo {
       font-family: 'Raleway', sans-serif;
       color: #44423f;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: left;
       margin-top: 10px;
       // display: inline-block;
@@ -438,17 +438,27 @@ h1 {
   .dc-bg  {
     @media (min-width: 730px){
     background-image: url("/images/dcstarrynight.jpg");
+    background-size: $background-size;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     }
     @media (max-width: 729px){
       background-image: url("/images/dcstarrynight2.jpg");
+      background-size: $background-size;
+      background-repeat: no-repeat;
     }
   }
   .event-bg  {
     @media (min-width: 730px){
     background-image: url("/images/fairmont.jpg");
+    background-size: $background-size;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   @media (max-width: 729px){
     background-image: url("/images/fairmont2.jpg");
+    background-size: $background-size;
+    background-repeat: no-repeat;
   }
   }
   .registry {
@@ -497,9 +507,6 @@ h1 {
     // padding: 30px;
     box-shadow: inset 0px 0px 31px 8px rgba(0,0,0,0.75);
     background-position: $background-position;
-    background-size: $background-size;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     h2 {
       color: $tranquil;
       // font-family: 'Pacifico', cursive;
@@ -768,7 +775,7 @@ h1 {
       color:#3d3e40;
       font-weight: 300;
       font-family: 'Raleway', sans-serif;
-      font-size: 1.2rem;
+      font-size: .95rem;
       margin-top: -15px;
       // width: 75%;
     }
