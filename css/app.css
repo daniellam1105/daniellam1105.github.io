@@ -5927,6 +5927,19 @@ th.hide-for-touch {
   padding: 70px 0 0px 0;
   background-image: url('/images/rock2.png'); }
 
+#reveal-insta {
+  border-radius: 20px;
+  border: solid 5px #3859f9;
+  color: #3859f9;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 20px 50px 20px 50px;
+  background-color: #fff; }
+
+#reveal-insta:hover {
+  background-color: #3859f9;
+  color: #fff; }
+
 @media screen and (min-width: 768px) {
   .rock-border {
     background-size: 1600px 800px, auto;

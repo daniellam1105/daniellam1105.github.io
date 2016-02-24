@@ -55,3 +55,15 @@ function showDiv(idInfo) {
 $('.linktorest').click(function(){
     $('#og_contain').hide();
 });
+//
+// var feed = new Instafeed({
+// 		get: 'tagged',
+// 		tagName: 'awesome',
+// 		clientId: 'YOUR_CLIENT_ID'
+// });
+// feed.run();
+//
+//
+// $('#reveal-insta').click(function(){
+// 	$('#instafeed').slideToggle('slow');
+// });
