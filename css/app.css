@@ -5982,10 +5982,10 @@ th.hide-for-touch {
   color: #3d3e40;
   font-weight: 300;
   font-family: 'Raleway', sans-serif; }
-  @media (min-width: 970px) {
+  @media screen and (min-width: 970px) {
     .for-plain p {
       font-size: 1.4rem; } }
-  @media (max-width: 969px) {
+  @media screen and (max-width: 969px) {
     .for-plain p {
       font-size: 1.1rem; } }
 
@@ -6004,10 +6004,10 @@ h2.onpic {
   text-shadow: 1px 1px 0px black;
   letter-spacing: 1.5px;
   font-family: 'Raleway', sans-serif; }
-  @media (min-width: 700px) {
+  @media screen and (min-width: 700px) {
     h2.onpic {
       font-size: 2.5rem; } }
-  @media (max-width: 699px) {
+  @media screen and (max-width: 699px) {
     h2.onpic {
       margin-top: 10px;
       font-size: 1.5rem; } }
@@ -6017,16 +6017,16 @@ h1 {
   text-shadow: 1px 2px 0px black;
   letter-spacing: 1.5px;
   font-family: 'Pacifico', cursive; }
-  @media (min-width: 700px) {
+  @media screen and (min-width: 700px) {
     h1 {
       margin-top: 200px;
       font-size: 4rem; } }
-  @media (max-width: 699px) {
+  @media screen and (max-width: 699px) {
     h1 {
       margin-top: 10px;
       font-size: 2.5rem; } }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .plain {
     padding: 50px; } }
 @media (max-width: 699px) {
@@ -6036,37 +6036,37 @@ h1 {
   color: #565659;
   padding: 0 0 15px 0;
   font-family: 'Comfortaa', cursive; }
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .plain h2 {
       text-align: center; } }
 
 .intro {
   box-shadow: inset 0px 0px 31px 8px rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat; }
-  @media (min-width: 713px) {
+  @media screen and (min-width: 713px) {
     .intro {
       background-image: url("/images/meandjaymo5.jpg");
       background-position: center center;
       background-size: cover;
       padding: 100px 0 0 0; } }
-  @media (max-width: 712px) {
+  @media screen and (max-width: 712px) {
     .intro {
       background-image: url("/images/meandjaymo5-2.jpg");
       background-size: cover;
       background-position: center center;
       padding: 100px 0 0 0; } }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .bridal {
     padding: 10px 50px 50px 50px; } }
-@media (max-width: 699px) {
+@media screen and (max-width: 699px) {
   .bridal {
     padding: 20px; } }
 .bridal h2 {
   color: #565659;
   font-family: 'Comfortaa', cursive;
   margin-bottom: 30px; }
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .bridal h2 {
       text-align: center; } }
 .bridal h3 {
@@ -6097,19 +6097,19 @@ h1 {
     background-position: center center;
     background-repeat: no-repeat;
     margin: 5px; }
-    @media (min-width: 970px) {
+    @media screen and (min-width: 970px) {
       .bridal .people .individual-img {
         width: 75px;
         height: 75px;
         background-size: 80px;
         border: solid 4px #cec7bd; } }
-    @media (min-width: 601px) and (max-width: 969px) {
+    @media screen and (min-width: 601px) and (max-width: 969px) {
       .bridal .people .individual-img {
         width: 65px;
         height: 65px;
         background-size: 65px;
         border: solid 4px #cec7bd; } }
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
       .bridal .people .individual-img {
         width: 50px;
         height: 50px;
@@ -6119,7 +6119,7 @@ h1 {
 a.linktorest {
   text-decoration: none; }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   a.linktorest:active div.individual-img {
     border: solid 5px #3859f9; }
   a.linktorest:focus div.individual-img {
@@ -6174,10 +6174,10 @@ a.linktorest {
     margin-top: 10px;
     font-weight: 300; }
 
-@media (min-width: 730px) {
+@media screen and (min-width: 730px) {
   #og_contain {
     padding: 150px 30px 70px 30px; } }
-@media (max-width: 729px) {
+@media screen and (max-width: 729px) {
   #og_contain {
     padding: 20px 10px 20px 10px; } }
 
@@ -6187,25 +6187,25 @@ a.linktorest {
   color: #44423f;
   font-size: 3rem; }
 
-@media (min-width: 730px) {
+@media screen and (min-width: 730px) {
   .dc-bg {
     background-image: url("/images/dcstarrynight.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; } }
-@media (max-width: 729px) {
+@media screen and (max-width: 729px) {
   .dc-bg {
     background-image: url("/images/dcstarrynight2.jpg");
     background-size: cover;
     background-repeat: no-repeat; } }
 
-@media (min-width: 730px) {
+@media screen and (min-width: 730px) {
   .event-bg {
     background-image: url("/images/fairmont.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; } }
-@media (max-width: 729px) {
+@media screen and (max-width: 729px) {
   .event-bg {
     background-image: url("/images/fairmont2.jpg");
     background-size: cover;
@@ -6219,7 +6219,7 @@ a.linktorest {
   .registry h2 {
     color: #565659;
     font-family: 'Comfortaa', cursive; }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .registry h2 {
         text-align: center; } }
 
@@ -6229,19 +6229,19 @@ a.linktorest {
 
 .color-bg {
   background-color: rgba(0, 0, 0, 0.6); }
-  @media (min-width: 700px) {
+  @media screen and (min-width: 700px) {
     .color-bg {
       padding: 50px; } }
-  @media (max-width: 699px) {
+  @media screen and (max-width: 699px) {
     .color-bg {
       padding: 20px; } }
 
 .dc-color-bg {
   background-color: rgba(0, 0, 0, 0.5); }
-  @media (min-width: 700px) {
+  @media screen and (min-width: 700px) {
     .dc-color-bg {
       padding: 50px; } }
-  @media (max-width: 699px) {
+  @media screen and (max-width: 699px) {
     .dc-color-bg {
       padding: 20px; } }
 
@@ -6252,7 +6252,7 @@ a.linktorest {
     color: #fff;
     font-family: 'Comfortaa', cursive;
     text-shadow: 1px 1px 0px black; }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .dc h2, .event h2 {
         text-align: center; } }
 
@@ -6373,7 +6373,7 @@ a.linktorest {
       letter-spacing: 1.5px; }
   .cal-info {
     background-color: white; }
-    @media (min-width: 730px) {
+    @media screen and (min-width: 730px) {
       .cal-info {
         padding: 0 50px 50px 0; } }
     @media (max-width: 729px) {
@@ -6396,12 +6396,12 @@ a.linktorest {
       font-family: 'Raleway', sans-serif;
       letter-spacing: 1.5px;
       margin-top: 30px; }
-      @media (min-width: 730px) {
+      @media screen and (min-width: 730px) {
         .cal-info p.upcoming-events {
           padding-right: 50px;
           padding-left: 50px;
           text-align: left; } }
-      @media (max-width: 729px) {
+      @media screen and (max-width: 729px) {
         .cal-info p.upcoming-events {
           padding-right: 0;
           padding-left: 20px;
@@ -6437,15 +6437,15 @@ a.linktorest {
 
 .to-do-boxes {
   padding: 30px 25px 20px 25px; }
-  @media (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
     .to-do-boxes {
       width: 30%;
       margin: 10px; } }
-  @media (min-width: 930px) and (max-width: 999px) {
+  @media screen and (min-width: 930px) and (max-width: 999px) {
     .to-do-boxes {
       width: 50%;
       margin: 25px; } }
-  @media (max-width: 929px) {
+  @media screen and (max-width: 929px) {
     .to-do-boxes {
       width: 100%;
       margin: 10px; } }
@@ -6488,15 +6488,15 @@ a.linktorest {
   padding-bottom: 15px; }
 .hotel-boxes .hotel-info-1 {
   padding: 15px 20px 10px 20px; }
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .hotel-boxes {
     width: 35%;
     margin: 25px; } }
-@media (min-width: 930px) and (max-width: 999px) {
+@media screen and (min-width: 930px) and (max-width: 999px) {
   .hotel-boxes {
     width: 30%;
     margin: 25px; } }
-@media (max-width: 929px) {
+@media screen and (max-width: 929px) {
   .hotel-boxes {
     width: 100%;
     margin: 10px; } }

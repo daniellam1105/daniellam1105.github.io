@@ -134,10 +134,10 @@ background-image: url('/images/rock2.png');
   color:#3d3e40;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
-  @media (min-width: 970px) {
+  @media screen and (min-width: 970px) {
   font-size: 1.4rem;
   }
-  @media (max-width: 969px) {
+  @media screen and (max-width: 969px) {
   font-size: 1.1rem;
   }
 }
@@ -163,10 +163,10 @@ h2.onpic {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     font-size: 2.5rem;
   }
-  @media (max-width: 699px){
+  @media screen and (max-width: 699px){
     margin-top: 10px;
     font-size: 1.5rem;
   }
@@ -183,18 +183,18 @@ h1 {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
     margin-top: 200px;
     font-size: 4rem;
   }
-  @media (max-width: 699px){
+  @media screen and (max-width: 699px){
     margin-top: 10px;
     font-size: 2.5rem;
   }
 }
 
 .plain {
-  @media (min-width: 700px){
+  @media screen and (min-width: 700px){
   padding: 50px;
 }
 @media (max-width: 699px){
@@ -210,7 +210,7 @@ h1 {
     // font-family: 'Lobster', cursive;
     font-family: 'Comfortaa', cursive;
     // font-family: 'Yanone Kaffeesatz', sans-serif;
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
     }
   }
@@ -223,13 +223,13 @@ h1 {
   background-repeat: no-repeat;
     //  background-attachment: fixed;
     //  background-image: url("/images/mjpic/IMG_0523.jpg");
-    @media (min-width: 713px) {
+    @media screen and (min-width: 713px) {
     background-image: url("/images/meandjaymo5.jpg");
     background-position: center center;
     background-size: $background-size;
     padding: 100px 0 0 0;
   }
-  @media (max-width: 712px) {
+  @media screen and (max-width: 712px) {
   background-image: url("/images/meandjaymo5-2.jpg");
   background-size: cover;
   background-position: center center;
@@ -238,10 +238,10 @@ h1 {
   }
 
   .bridal {
-    @media (min-width: 700px){
+    @media screen and (min-width: 700px){
     padding: 10px 50px 50px 50px;
   }
-  @media (max-width: 699px){
+  @media screen and (max-width: 699px){
     padding: 20px;
   }
     // background-color: $smooth;
@@ -263,7 +263,7 @@ h1 {
       // font-family: 'Yanone Kaffeesatz', sans-serif;
       // text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
       margin-bottom: 30px;
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         text-align: center;
       }
     }
@@ -308,19 +308,19 @@ h1 {
         background-position: $background-position;
         background-repeat: no-repeat;
         margin: 5px;
-          @media (min-width: 970px) {
+          @media screen and (min-width: 970px) {
             width: 75px;
             height: 75px;
             background-size: 80px;
             border: solid 4px $smooth;
           }
-          @media (min-width: 601px) and (max-width: 969px) {
+          @media screen and (min-width: 601px) and (max-width: 969px) {
             width: 65px;
             height: 65px;
             background-size: 65px;
             border: solid 4px $smooth;
           }
-          @media (max-width: 600px) {
+          @media screen and (max-width: 600px) {
             width: 50px;
             height: 50px;
             background-size: 50px;
@@ -335,7 +335,7 @@ h1 {
   a.linktorest {
     text-decoration: none;
   }
-  @media (min-width: 700px) {
+  @media screen and (min-width: 700px) {
   a.linktorest:active div.individual-img{
     border: solid 5px $myblue;
   }
@@ -432,10 +432,10 @@ h1 {
     }
   }
   #og_contain {
-    @media (min-width: 730px){
+    @media screen and (min-width: 730px){
     padding: 150px 30px 70px 30px;
   }
-  @media (max-width: 729px){
+  @media screen and (max-width: 729px){
   padding: 20px 10px 20px 10px;
 }
   }
@@ -453,26 +453,26 @@ h1 {
   //   border-bottom: solid 3px $myblue;
   // }
   .dc-bg  {
-    @media (min-width: 730px){
+    @media screen and (min-width: 730px){
     background-image: url("/images/dcstarrynight.jpg");
     background-size: $background-size;
     background-repeat: no-repeat;
     background-attachment: fixed;
     }
-    @media (max-width: 729px){
+    @media screen and (max-width: 729px){
       background-image: url("/images/dcstarrynight2.jpg");
       background-size: $background-size;
       background-repeat: no-repeat;
     }
   }
   .event-bg  {
-    @media (min-width: 730px){
+    @media screen and (min-width: 730px){
     background-image: url("/images/fairmont.jpg");
     background-size: $background-size;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  @media (max-width: 729px){
+  @media screen and (max-width: 729px){
     background-image: url("/images/fairmont2.jpg");
     background-size: $background-size;
     background-repeat: no-repeat;
@@ -493,7 +493,7 @@ h1 {
     font-family: 'Comfortaa', cursive;
     // font-family: 'Yanone Kaffeesatz', sans-serif;
     // text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       text-align: center;
     }
     }
@@ -506,19 +506,19 @@ h1 {
     // background-color: rgba(56,89,249,.65);
     // box-shadow: inset 0px 0px 31px 8px rgba(0,0,0,0.5);
     background-color: rgba(0,0,0, .6);
-    @media (min-width: 700px){
+    @media screen and (min-width: 700px){
     padding: 50px;
   }
-  @media (max-width: 699px){
+  @media screen and (max-width: 699px){
     padding: 20px;
   }
 }
   .dc-color-bg {
     background-color: rgba(0,0,0, .5);
-    @media (min-width: 700px){
+    @media screen and (min-width: 700px){
     padding: 50px;
   }
-  @media (max-width: 699px){
+  @media screen and (max-width: 699px){
     padding: 20px;
   }
   }
@@ -537,7 +537,7 @@ h1 {
       font-family: 'Comfortaa', cursive;
       // font-family: 'Yanone Kaffeesatz', sans-serif;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         text-align: center;
       }
     }
@@ -695,7 +695,7 @@ h1 {
 }
 .cal-info {
   background-color: white;
-  @media (min-width: 730px){
+  @media screen and (min-width: 730px){
   padding: 0 50px 50px 0;
 }
 @media (max-width: 729px){
@@ -721,12 +721,12 @@ padding: 0 15px 20px 5px;
     // font-weight: 500;
     letter-spacing: 1.5px;
     margin-top: 30px;
-      @media (min-width: 730px){
+      @media screen and (min-width: 730px){
     padding-right: 50px;
     padding-left: 50px;
     text-align: left;
   }
-  @media (max-width: 729px){
+  @media screen and (max-width: 729px){
 padding-right: 0;
 padding-left: 20px;
 text-align: center;
@@ -770,15 +770,15 @@ text-align: center;
 }
 .to-do-boxes {
   padding: 30px 25px 20px 25px;
-  @media (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
   width: 30%;
   margin: 10px;
   }
-  @media (min-width: 930px) and (max-width: 999px) {
+  @media screen and (min-width: 930px) and (max-width: 999px) {
   width: 50%;
   margin: 25px;
   }
-  @media (max-width: 929px) {
+  @media screen and (max-width: 929px) {
   width: 100%;
   margin: 10px;
   }
@@ -831,15 +831,15 @@ text-align: center;
   .hotel-info-1 {
     padding: 15px 20px 10px 20px;
   }
-  @media (min-width: 1000px) {
+  @media screen and (min-width: 1000px) {
   width: 35%;
   margin: 25px;
   }
-  @media (min-width: 930px) and (max-width: 999px) {
+  @media screen and (min-width: 930px) and (max-width: 999px) {
   width: 30%;
   margin: 25px;
   }
-  @media (max-width: 929px) {
+  @media screen and (max-width: 929px) {
   width: 100%;
   margin: 10px;
   }
@@ -977,11 +977,11 @@ a.registry-store:hover {
 // //   margin: 0; }
 // //
 // // [landing] [landing-section] {
-// //   @media (max-width: $portable) {
+// //   @media screen and (max-width: $portable) {
 // //     padding: 2px 4px; }
 // //   padding: 0px 30px 75px 30px; }
 // //   [landing] [landing-section] h2 {
-// //     @media (max-width: $palm) {
+// //     @media screen and (max-width: $palm) {
 // //       margin-left: 3px;
 // //     }
 // //     border-bottom: 1px solid $neutral;
@@ -1008,7 +1008,7 @@ a.registry-store:hover {
 // //       margin-top: 50px;
 // //       margin-bottom: 50px; }
 // //       [landing] [landing-section] [content] [video] iframe {
-// //         @media (max-width: $awkward) {
+// //         @media screen and (max-width: $awkward) {
 // //           width: 300px;
 // //           height: 190px; }
 // //         width: $portable;
@@ -1019,7 +1019,7 @@ a.registry-store:hover {
 // // [landing] [landing-section~="welcome"] {
 // // @media (max-width: $awkward) {
 // //   padding-bottom: 15px;} h1 {
-// //   @media (max-width: $awkward) {
+// //   @media screen and (max-width: $awkward) {
 // //     padding-top: 25px;}
 // //   text-align: center;
 // //   padding-top: 75px;
@@ -1036,7 +1036,7 @@ a.registry-store:hover {
 // // [landing] [landing-section~="roi"] {
 // //   margin-bottom: 50px; }
 // //   [landing] [landing-section~="roi"] [lead-in] {
-// //     @media (max-width: $palm) {
+// //     @media screen and (max-width: $palm) {
 // //       margin-left: 3px;
 // //     }
 // //     font-size: 30px; }
@@ -1103,7 +1103,7 @@ a.registry-store:hover {
 // //           border-color: rgba(255, 255, 255, 0.13) transparent transparent transparent; }
 // //     [landing] [landing-section~="roi"] [content] [ladder] + [ladder] {
 // //       margin-left: 70px; }
-// //     @media (max-width: $satisfied) {
+// //     @media screen and (max-width: $satisfied) {
 // //       [landing] [landing-section~="roi"] [content] [ladder] {
 // //         -webkit-box-flex: 0;
 // //         -webkit-flex: 0 0 100%;
@@ -1124,7 +1124,7 @@ a.registry-store:hover {
 // //       justify-content: space-around;
 // //       text-align: center; }
 // //       [landing] [landing-section~="roi"] [content] [call-to-action] [button] {
-// //         @media (max-width: $modest) {
+// //         @media screen and (max-width: $modest) {
 // //           -webkit-box-flex: 0;
 // //           -webkit-flex: 0 1 100%;
 // //           -ms-flex: 0 1 100%;
@@ -1154,7 +1154,7 @@ a.registry-store:hover {
 // //     -webkit-flex-direction: column;
 // //     -ms-flex-direction: column;
 // //     flex-direction: column; }
-// //   @media (max-width: $portable) {
+// //   @media screen and (max-width: $portable) {
 // //     [landing] [landing-section~="webinars"] [content] {
 // //       display: -webkit-box;
 // //       display: -webkit-flex;
@@ -1220,7 +1220,7 @@ a.registry-store:hover {
 // //           border-radius: 6px; }
 // //           [landing] [landing-section~="webinars"] [announcement] [upcoming] [call-to-action] [button]:hover {
 // //             background: darken($go, 10%); }
-// //     @media (max-width: $portable) {
+// //     @media screen and (max-width: $portable) {
 // //       [landing] [landing-section~="webinars"] [announcement] [copy] {
 // //         font-size: 25px; }
 // //       [landing] [landing-section~="webinars"] [announcement] [upcoming] {
@@ -1266,7 +1266,7 @@ a.registry-store:hover {
 // //       margin-top: 7px; }
 // //     [landing] [landing-section~="webinars"] [archive] h3 {
 // //       margin-bottom: 30px; }
-// //     @media (max-width: $modest) {
+// //     @media screen and (max-width: $modest) {
 // //       [landing] [landing-section~="webinars"] [archive] [items] {
 // //         display: -webkit-box;
 // //         display: -webkit-flex;
