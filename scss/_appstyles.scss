@@ -85,13 +85,13 @@ background-image: url('/images/rock2.png');
   background-color: $myblue;
   color: #fff;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width: 48rem){
   .rock-border {
-  background-size: 1600px 800px,auto;
-  padding: 130px 0 0px 0;
+  background-size: 1600px 800px,auto !important;
+  padding: 130px 0 0px 0 !important;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
 .m-sm-frame-hero {
     position: static;
     left: auto;
@@ -99,32 +99,32 @@ background-image: url('/images/rock2.png');
     margin-left: 0;
 }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 47.9375rem){
 .m-sm-frame-hero {
     position: relative;
     left: 0;
-    max-width: 800px;
+    max-width: 800px !important;
     margin-left: 0;
   }
 }
 .info {
   line-height: 1.4;
 }
-@media (min-width: 830px) {
+@media (min-width: 51.875rem) {
 .image-right{
-  float: right;
-  padding-left: 20px;
+  float: right !important;
+  padding-left: 20px !important;
 }
 .image-mobile {
   display:none;
 }
 }
-@media (max-width: 829px) {
+@media screen and (max-width: 51.8125rem) {
 .image-right{
-  display:none;
+  display:none !important;
 }
 .image-mobile {
-  display: inline-block;
+  display: inline-block !important;
 }
 }
 .on-left {
@@ -134,10 +134,10 @@ background-image: url('/images/rock2.png');
   color:#3d3e40;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
-  @media screen and (min-width: 970px) {
+  @media screen and (min-width: 60.625rem) {
   font-size: 1.4rem;
   }
-  @media screen and (max-width: 969px) {
+  @media screen and (max-width: 60.5625rem) {
   font-size: 1.1rem;
   }
 }
@@ -163,12 +163,12 @@ h2.onpic {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
-  @media screen and (min-width: 700px){
-    font-size: 2.5rem;
+  @media screen and (min-width: 43.75rem){
+    font-size: 2.5rem !important;
   }
-  @media screen and (max-width: 699px){
-    margin-top: 10px;
-    font-size: 1.5rem;
+  @media screen and (max-width: 43.6875rem){
+    margin-top: 10px !important;
+    font-size: 1.5rem !important;
   }
 }
 h1 {
@@ -183,21 +183,21 @@ h1 {
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Yanone Kaffeesatz', sans-serif;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 43.75rem){
     margin-top: 200px;
     font-size: 4rem;
   }
-  @media screen and (max-width: 699px){
+  @media screen and (max-width: 43.6875rem){
     margin-top: 10px;
     font-size: 2.5rem;
   }
 }
 
 .plain {
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 43.75rem){
   padding: 50px;
 }
-@media (max-width: 699px){
+@media (max-width: 43.6875rem){
   padding: 20px;
 }
   h2 {
@@ -210,7 +210,7 @@ h1 {
     // font-family: 'Lobster', cursive;
     font-family: 'Comfortaa', cursive;
     // font-family: 'Yanone Kaffeesatz', sans-serif;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 47.9375rem) {
       text-align: center;
     }
   }
@@ -223,13 +223,13 @@ h1 {
   background-repeat: no-repeat;
     //  background-attachment: fixed;
     //  background-image: url("/images/mjpic/IMG_0523.jpg");
-    @media screen and (min-width: 713px) {
+    @media screen and (min-width: 44.5625rem) {
     background-image: url("/images/meandjaymo5.jpg");
     background-position: center center;
     background-size: $background-size;
     padding: 100px 0 0 0;
   }
-  @media screen and (max-width: 712px) {
+  @media screen and (max-width: 44.5rem) {
   background-image: url("/images/meandjaymo5-2.jpg");
   background-size: cover;
   background-position: center center;
