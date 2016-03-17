@@ -15,11 +15,6 @@ $background-position: center center;
 // font-family: 'Yanone Kaffeesatz', sans-serif;
 
 // screen widths:
-$palm: 400px;
-$modest: 750px;
-$portable: 500px;
-$satisfied: 850px;
-$awkward: 550px;
 .navlink {
   letter-spacing: 1px;
   // font-weight:700;
@@ -99,7 +94,7 @@ background-image: url('/images/rock2.png');
     margin-left: 0;
 }
 }
-@media screen and (max-width: 47.9375rem){
+@media handheld, screen and (max-width: 47.9375rem){
 .m-sm-frame-hero {
     position: relative;
     left: 0;
@@ -110,7 +105,7 @@ background-image: url('/images/rock2.png');
 .info {
   line-height: 1.4;
 }
-@media (min-width: 51.875rem) {
+@media screen and (min-width: 51.875rem) {
 .image-right{
   float: right !important;
   padding-left: 20px !important;
@@ -119,7 +114,7 @@ background-image: url('/images/rock2.png');
   display:none;
 }
 }
-@media screen and (max-width: 51.8125rem) {
+@media handheld, screen and (max-width: 51.8125rem) {
 .image-right{
   display:none !important;
 }
@@ -137,7 +132,7 @@ background-image: url('/images/rock2.png');
   @media screen and (min-width: 60.625rem) {
   font-size: 1.4rem;
   }
-  @media screen and (max-width: 60.5625rem) {
+  @media handheld, screen and (max-width: 60.5625rem) {
   font-size: 1.1rem;
   }
 }
@@ -166,7 +161,7 @@ h2.onpic {
   @media screen and (min-width: 43.75rem){
     font-size: 2.5rem !important;
   }
-  @media screen and (max-width: 43.6875rem){
+  @media handheld, screen and (max-width: 43.6875rem){
     margin-top: 10px !important;
     font-size: 1.5rem !important;
   }
@@ -187,7 +182,7 @@ h1 {
     margin-top: 200px;
     font-size: 4rem;
   }
-  @media screen and (max-width: 43.6875rem){
+  @media handheld, screen and (max-width: 43.6875rem){
     margin-top: 10px;
     font-size: 2.5rem;
   }
@@ -197,7 +192,7 @@ h1 {
   @media screen and (min-width: 43.75rem){
   padding: 50px;
 }
-@media (max-width: 43.6875rem){
+@media handheld, screen and (max-width: 43.6875rem){
   padding: 20px;
 }
   h2 {
@@ -210,7 +205,7 @@ h1 {
     // font-family: 'Lobster', cursive;
     font-family: 'Comfortaa', cursive;
     // font-family: 'Yanone Kaffeesatz', sans-serif;
-    @media screen and (max-width: 47.9375rem) {
+    @media handheld, screen and (max-width: 47.9375rem) {
       text-align: center;
     }
   }
@@ -229,7 +224,7 @@ h1 {
     background-size: $background-size;
     padding: 100px 0 0 0;
   }
-  @media screen and (max-width: 44.5rem) {
+  @media  handheld, screen and (max-width: 44.5rem) {
   background-image: url("/images/meandjaymo5-2.jpg");
   background-size: cover;
   background-position: center center;
@@ -241,7 +236,7 @@ h1 {
     @media screen and (min-width: 700px){
     padding: 10px 50px 50px 50px;
   }
-  @media screen and (max-width: 699px){
+  @media handheld, screen and (max-width: 699px){
     padding: 20px;
   }
     // background-color: $smooth;
@@ -263,7 +258,7 @@ h1 {
       // font-family: 'Yanone Kaffeesatz', sans-serif;
       // text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
       margin-bottom: 30px;
-      @media screen and (max-width: 767px) {
+      @media handheld, screen and (max-width: 767px) {
         text-align: center;
       }
     }
@@ -320,7 +315,7 @@ h1 {
             background-size: 65px;
             border: solid 4px $smooth;
           }
-          @media screen and (max-width: 600px) {
+          @media handheld, screen and (max-width: 600px) {
             width: 50px;
             height: 50px;
             background-size: 50px;
@@ -343,7 +338,7 @@ h1 {
     border: solid 5px $myblue;
   }
 }
-@media (max-width: 699px) {
+@media handheld, screen and (max-width: 699px) {
   a.linktorest:focus div.individual-img{
     border: solid 2px $myblue;
   }
@@ -435,7 +430,7 @@ h1 {
     @media screen and (min-width: 730px){
     padding: 150px 30px 70px 30px;
   }
-  @media screen and (max-width: 729px){
+  @media handheld, screen and (max-width: 729px){
   padding: 20px 10px 20px 10px;
 }
   }
@@ -459,7 +454,7 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     }
-    @media screen and (max-width: 729px){
+    @media handheld, screen and (max-width: 729px){
       background-image: url("/images/dcstarrynight2.jpg");
       background-size: $background-size;
       background-repeat: no-repeat;
@@ -472,7 +467,7 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  @media screen and (max-width: 729px){
+  @media handheld, screen and (max-width: 729px){
     background-image: url("/images/fairmont2.jpg");
     background-size: $background-size;
     background-repeat: no-repeat;
@@ -493,7 +488,7 @@ h1 {
     font-family: 'Comfortaa', cursive;
     // font-family: 'Yanone Kaffeesatz', sans-serif;
     // text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    @media screen and (max-width: 767px) {
+    @media handheld, screen and (max-width: 767px) {
       text-align: center;
     }
     }
@@ -509,7 +504,7 @@ h1 {
     @media screen and (min-width: 700px){
     padding: 50px;
   }
-  @media screen and (max-width: 699px){
+  @media handheld, screen and (max-width: 699px){
     padding: 20px;
   }
 }
@@ -518,7 +513,7 @@ h1 {
     @media screen and (min-width: 700px){
     padding: 50px;
   }
-  @media screen and (max-width: 699px){
+  @media handheld, screen and (max-width: 699px){
     padding: 20px;
   }
   }
@@ -537,7 +532,7 @@ h1 {
       font-family: 'Comfortaa', cursive;
       // font-family: 'Yanone Kaffeesatz', sans-serif;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-      @media screen and (max-width: 767px) {
+      @media handheld, screen and (max-width: 767px) {
         text-align: center;
       }
     }
@@ -555,7 +550,7 @@ h1 {
     //   // text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
     // }
   }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 .calendar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -645,7 +640,7 @@ h1 {
 }
 }
 
-@media (max-width: 767px) {
+@media handheld, screen and (max-width: 767px) {
 .calendar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -698,7 +693,7 @@ h1 {
   @media screen and (min-width: 730px){
   padding: 0 50px 50px 0;
 }
-@media (max-width: 729px){
+@media handheld, screen and (max-width: 729px){
 padding: 0 15px 20px 5px;
 }
   p.year {
@@ -726,7 +721,7 @@ padding: 0 15px 20px 5px;
     padding-left: 50px;
     text-align: left;
   }
-  @media screen and (max-width: 729px){
+  @media handheld, screen and (max-width: 729px){
 padding-right: 0;
 padding-left: 20px;
 text-align: center;
@@ -778,7 +773,7 @@ text-align: center;
   width: 50%;
   margin: 25px;
   }
-  @media screen and (max-width: 929px) {
+  @media handheld, screen and (max-width: 929px) {
   width: 100%;
   margin: 10px;
   }
@@ -839,7 +834,7 @@ text-align: center;
   width: 30%;
   margin: 25px;
   }
-  @media screen and (max-width: 929px) {
+  @media handheld, screen and (max-width: 929px) {
   width: 100%;
   margin: 10px;
   }
@@ -906,7 +901,7 @@ box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.44);
   transform: scale(1.2);
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
 a.registry-store {
   background-color: white;
   border: solid 3px #565659;
@@ -936,7 +931,7 @@ a.registry-store {
   width: 300px;
 }
 }
-@media (max-width: 766px) {
+@media handheld, screen and (max-width: 766px) {
 a.registry-store {
   background-color: white;
   border: solid 3px #565659;

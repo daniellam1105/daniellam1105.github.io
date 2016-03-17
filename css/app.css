@@ -6256,7 +6256,7 @@ a.linktorest {
       .dc h2, .event h2 {
         text-align: center; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .calendar {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6330,7 +6330,7 @@ a.linktorest {
         font-weight: 500;
         color: #7b7c80; } }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .calendar {
     display: -webkit-box;
     display: -webkit-flex;
