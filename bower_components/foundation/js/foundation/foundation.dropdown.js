@@ -4,11 +4,10 @@
   Foundation.libs.dropdown = {
     name : 'dropdown',
 
-    version : '5.4.7',
+    version : '5.4.3',
 
     settings : {
       active_class: 'open',
-      disabled_class: 'disabled',
       mega_class: 'mega',
       align: 'bottom',
       is_hover: false,
@@ -148,9 +147,6 @@
     },
 
     toggle : function (target) {
-      if (target.hasClass(this.settings.disabled_class)) {
-        return;
-      }
       var dropdown = this.S('#' + target.data(this.data_attr()));
       if (dropdown.length === 0) {
         // No dropdown found, not continuing
@@ -302,7 +298,7 @@
     clear_idx : function () {
       var sheet = Foundation.stylesheet;
 
-      if (typeof this.rule_idx !== 'undefined') {
+      if (this.rule_idx) {
         sheet.deleteRule(this.rule_idx);
         sheet.deleteRule(this.rule_idx);
         delete this.rule_idx;

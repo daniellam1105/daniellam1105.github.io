@@ -1,4 +1,3 @@
-
 var app = (function(document, $) {
 
 	'use strict';
@@ -25,6 +24,20 @@ var app = (function(document, $) {
 
 })();
 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 
 function showDiv(idInfo) {
@@ -42,15 +55,3 @@ function showDiv(idInfo) {
 $('.linktorest').click(function(){
     $('#og_contain').hide();
 });
-//
-// var feed = new Instafeed({
-// 		get: 'tagged',
-// 		tagName: 'awesome',
-// 		clientId: 'YOUR_CLIENT_ID'
-// });
-// feed.run();
-//
-//
-// $('#reveal-insta').click(function(){
-// 	$('#instafeed').slideToggle('slow');
-// });

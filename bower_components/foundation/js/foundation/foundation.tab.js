@@ -4,7 +4,7 @@
   Foundation.libs.tab = {
     name : 'tab',
 
-    version : '5.4.7',
+    version : '5.4.3',
 
     settings : {
       active_class: 'active',
@@ -59,7 +59,14 @@
       S(window).on('hashchange.fndtn.tab', function (e) {
         e.preventDefault();
         self.handle_location_hash_change();
-      });
+
+      }).on('keyup', function (e) {
+        if (e.keyword == 9) {
+          // active tab
+          console.log(document.querySelector('[data-tab] .tab-title :focus'))
+        }
+      });
+      ;
     },
 
     handle_location_hash_change : function () {
@@ -82,7 +89,7 @@
             // Check whether the location hash references a tab content div or
             // another element on the page (inside or outside the tab content div)
             var hash_element = S(hash);
-            if (hash_element.hasClass('content') && hash_element.parent().hasClass('tabs-content')) {
+            if (hash_element.hasClass('content') && hash_element.parent().hasClass('tab-content')) {
               // Tab content div
               self.toggle_active_tab($('[' + self.attr_name() + '] > * > a[href=' + hash + ']').parent());
             } else {
@@ -95,7 +102,7 @@
             }
           } else {
             // Reference the default tab hashes which were initialized in the init function
-            for (var ind = 0; ind < self.default_tab_hashes.length; ind++) {
+            for (var ind in self.default_tab_hashes) {
               self.toggle_active_tab($('[' + self.attr_name() + '] > * > a[href=' + self.default_tab_hashes[ind] + ']').parent());
             }
           }
@@ -113,7 +120,7 @@
           siblings = tab.siblings(),
           settings = tabs.data(this.attr_name(true) + '-init'),
           interpret_keyup_action = function(e) {
-            // Light modification of Heydon Pickering's Practical ARIA Examples: http://heydonworks.com/practical_aria_examples/js/a11y.js
+            // Light modification of Heydon Pickering's Practical ARIA Examples: http://heydonworks.com/practical_aria_examples/js/a11y.js 
 
             // define current, previous and next (possible) tabs
 
@@ -193,13 +200,13 @@
       tab_link.attr({"aria-selected": "true",  tabindex: 0});
       siblings.removeClass(settings.active_class)
       siblings.find('a').attr({"aria-selected": "false",  tabindex: -1});
-      target.siblings().removeClass(settings.active_class).attr({"aria-hidden": "true",  tabindex: -1});
-      target.addClass(settings.active_class).attr('aria-hidden', 'false').removeAttr("tabindex");
+      target.siblings().removeClass(settings.active_class).attr({"aria-hidden": "true",  tabindex: -1}).end().addClass(settings.active_class).attr('aria-hidden', 'false').find(':first-child').attr('tabindex', 0);
       settings.callback(tab);
+      target.children().attr('tab-index', 0);
       target.triggerHandler('toggled', [tab]);
       tabs.triggerHandler('toggled', [target]);
 
-      tab_link.off('keydown').on('keydown', interpret_keyup_action );
+      tab_link.on('keydown', interpret_keyup_action );
     },
 
     data_attr: function (str) {
