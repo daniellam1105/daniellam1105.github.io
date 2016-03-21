@@ -8,11 +8,8 @@ $shadow: rgba(0,0,0,.5);
 $background-size: cover;
 $background-position: center center;
 
-@viewport{
-    zoom: 1.0;
-    width: device-width;
-}
 @import "foundation/components/magellan";
+html { min-width:100%; }
 
 // font-family: 'Pacifico', cursive;
 // font-family: 'Raleway', sans-serif;
